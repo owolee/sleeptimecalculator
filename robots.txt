@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /private/
+Sitemap: https://thisisixi.github.io/sleepcalculator/sitemap.xml
