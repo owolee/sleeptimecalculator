@@ -40,7 +40,7 @@ input {
 }
 
 button {
-    background-color: #E8C872; /* 옅은 노란색 */
+    background-color: #fff781; /* 옅은 노란색 */
     border: none;
     padding: 8px 12px;
     cursor: pointer;
@@ -50,7 +50,7 @@ button {
 }
 
 button:hover {
-    background-color: #C9A856; /* 버튼 클릭 시 더 진한 노란색 */
+    background-color: #faf2b8; /* 버튼 클릭 시 더 연한 노란색 */
 }
 
 .result-box {
@@ -69,7 +69,7 @@ button:hover {
 }
 
 .time-box {
-    background-color: #E8C872; /* 옅은 노란색 */
+    background-color: #fff781; /* 옅은 노란색 */
     padding: 10px;
     border-radius: 5px;
     font-size: 18px;
@@ -88,7 +88,7 @@ button:hover {
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #FF6B81; /* 진한 핑크 */
+    background-color: #f68797; /* 진한 핑크 */
     color: white;
     font-size: 12px;
     padding: 2px 5px;
@@ -142,7 +142,7 @@ p {
 .back-button {
     display: inline-block;
     margin-top: 30px;
-    background-color: #E8C872;
+    background-color: #fff781;
     color: black;
     padding: 10px 20px;
     text-decoration: none;
@@ -151,7 +151,7 @@ p {
 }
 
 .back-button:hover {
-    background-color: #C9A856;
+    background-color: #faf2b8;
 }
 
 /* 기존 계산기 페이지 스타일 */
@@ -176,7 +176,7 @@ p {
 }
 
 button {
-    background-color: #E8C872;
+    background-color: #fff781;
     border: none;
     padding: 8px 12px;
     cursor: pointer;
@@ -186,7 +186,7 @@ button {
 }
 
 button:hover {
-    background-color: #C9A856;
+    background-color: #faf2b8; /* 버튼 클릭 시 더 연한 노란색 */
 }
 
 @media (max-width: 768px) {
