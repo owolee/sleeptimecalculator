@@ -191,7 +191,7 @@ button:hover {
 
 @media (max-width: 768px) {
     body {
-        padding: 10px; /* 모바일 화면에서 여백 줄이기 */
+        padding: 5px; /* 모바일 화면에서 여백 줄이기 */
     }
 
     .container {
@@ -212,7 +212,7 @@ button:hover {
     }
 
     h1 {
-        font-size: 24px; /* 모바일에서 제목 크기 조정 */
+        font-size: 22px; /* 모바일에서 제목 크기 조정 */
     }
 
     .time-grid {
