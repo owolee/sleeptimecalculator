@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #0D1B2A; /* 진한 남색 */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* 항목 간 간격을 더 넓힘 */
+}
+
+.input-box {
+    background-color: #1B263B; /* 어두운 남색 */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input {
+    font-size: 16px;
+    padding: 5px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* 버튼 위에 여백 추가 */
+}
+
+button {
+    background-color: #E8C872; /* 옅은 노란색 */
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px; /* 버튼 모서리 둥글게 */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #C9A856; /* 버튼 클릭 시 더 진한 노란색 */
+}
+
+.result-box {
+    background-color: #1B263B;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px; /* 결과 박스 간 간격을 넓힘 */
+    margin-bottom: 60px;
+}
+
+.time-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2열 배치 */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.time-box {
+    background-color: #E8C872; /* 옅은 노란색 */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.recommended {
+    background-color: #F4A7B9; /* 연한 핑크 */
+    position: relative;
+}
+
+.recommended::before {
+    content: "추천!";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF6B81; /* 진한 핑크 */
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+/* 기존 스타일 유지 */
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #0D1B2A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* 인포 페이지 컨테이너 스타일 */
+.info-container {
+    background-color: #1B263B;
+    padding: 40px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    box-sizing: border-box; /* 패딩 포함하도록 설정 */
+}
+
+/* 제목 스타일 */
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+/* 문단 스타일 */
+p {
+    margin-top: 15px;
+}
+
+/* 돌아가기 버튼 스타일 */
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #E8C872;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #C9A856;
+}
+
+/* 기존 계산기 페이지 스타일 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-box {
+    background-color: #1B263B;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #E8C872;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #C9A856;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* 모바일 화면에서 여백 줄이기 */
+    }
+
+    .container {
+        gap: 15px; /* 항목 간 간격 줄이기 */
+    }
+
+    .input-box {
+        padding: 10px; /* 모바일에서 입력 박스 크기 조정 */
+    }
+
+    button {
+        padding: 10px 20px; /* 모바일 버튼 크기 조정 */
+        font-size: 14px; /* 글자 크기 줄이기 */
+    }
+
+    .result-box {
+        margin-top: 15px; /* 결과 박스 간격 조정 */
+    }
+
+    h1 {
+        font-size: 24px; /* 모바일에서 제목 크기 조정 */
+    }
+
+    .time-grid {
+        grid-template-columns: 1fr; /* 모바일에서 1열로 표시 */
+    }
+}

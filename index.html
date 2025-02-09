@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ 수면 시간 계산기 ✨</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>✨ 수면 시간 계산기 ✨</h1>
+
+    <div class="container">
+        <!-- 기상 시간 입력 -->
+        <div class="input-box">
+            <label for="wake-up-time">언제 일어날거야?</label>
+            <input type="time" id="wake-up-time">
+            <div class="button-container">
+                <button onclick="calculateBedtime()">계산하기</button>
+            </div>
+        </div>
+
+        <!-- 추천 취침 시간 -->
+        <div class="result-box">
+            <h2>🌙 추천 취침시간</h2>
+            <div class="time-grid" id="bedtime-results"></div>
+        </div>
+
+           <!-- 취침 시간 입력 -->
+<div class="input-box">
+    <label for="bedtime">취침 시간</label>
+    <input type="time" id="bedtime">
+    <!-- 현재 시간 버튼은 그대로 두고 계산하기 버튼만 한칸 아래로 내리기 -->
+    <button id="current-time-btn" onclick="setCurrentTime()">현재시간으로 설정</button>
+    <div class="button-container">
+        <button onclick="calculateWakeUpTime()">계산하기</button>
+    </div>
+</div>
+        <!-- 추천 기상 시간 -->
+        <div class="result-box">
+            <h2>☀️ 추천 기상시간</h2>
+            <div class="time-grid" id="wake-up-results"></div>
+        </div>
+    </div>
+
+    <button id="info-btn" onclick="window.location.href='info.html'">☁️ 수면 사이클이란? ☁️</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
